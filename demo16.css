@@ -1,0 +1,16 @@
+.div {
+    width: 200px;
+    height: 200px;
+    background: teal;
+    /*clip-path: polygon(0 0, 0 100%, 100% 50%);/* refer remarks before usage */
+clip-path: circle(30% at 50% 50%);/* refer remarks before usage */
+}
+.div2 {
+    height: 600px;
+    width: 600px;
+    background: url('edine.jpg');
+    mask-image: linear-gradient(to top right, transparent 49.5%, white 50.5%), lineargradient(to top left, transparent 49.5%, white 50.5%), linear-gradient(white, white);
+mask-size: 75% 25%, 25% 25%, 100% 75%;
+mask-position: bottom left, bottom right, top left;
+mask-repeat: no-repeat;  
+}

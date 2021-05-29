@@ -1,0 +1,49 @@
+.bordered {
+    border: 3px solid;
+    border-image: linear-gradient(to right, red 20%, green 20%, green 40%, blue 40%, blue 60%, maroon 60%, maroon 80%, chocolate 80%);/* gradient with required colors */
+    border-image-slice: 1;
+    width: 20%;
+    height: 80px;
+    padding: 10px;
+}
+.box_shadow {
+    width: 200px;
+    height: 100px;
+    margin: 50px;
+    background-color: #1c90f3;
+}
+.box_shadow::after {
+    content: '';
+    width: 190px;
+    height: 1px;
+    margin-top: 98px;
+    margin-left: 5px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0px 0px 8px 2px #444;
+}
+.mona {
+    width: 200px;
+    height: 100px;
+    margin: 50px;
+    background-color: #1c90f3;
+    box-shadow: inset 0px 0px 10px 0px #444444;  
+}
+.mona2 {
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    box-shadow:
+     -52px -52px 0px 0px #f65314,
+    52px -52px 0px 0px #7cbb00,
+    -52px 52px 0px 0px #00a1f1,
+    52px 52px 0px 0px #fb0;
+}
+.mona3 {
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    background-color: #1c90f3;
+    margin: 100px;
+}

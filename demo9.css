@@ -1,0 +1,22 @@
+html, body, .container {
+    height: 100%;
+}
+.container {
+    display: flex;
+    justify-content: center;/* horizontal center */
+}
+img {
+    align-self: center;/* vertical center */
+}
+.parent {
+    position: relative;
+    height: 500px;
+}
+.center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

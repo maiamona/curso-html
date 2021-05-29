@@ -1,0 +1,27 @@
+.div {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    transition: background-color 1s;
+}
+.div:hover {
+    background-color: green;
+}
+.div2 {
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    background-color: orange;
+    transition-property: height, width, background-color;
+    transition-duration: 1s, 500ms;
+    transition-timing-function: linear;
+    transition-delay: 0s, 1s;
+}
+.div2:hover {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+.div3:hover {
+   font-variant: small-caps;
+}

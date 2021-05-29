@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Angular/angular.min.js"></script>
+    <script src="Angular/angular-route.min.js"></script>
+</head>
+<body ng-app="myApp">
+
+    <p><a href="#/!">Main</a></p>
+    
+    <a href="#!london">City 1</a>
+    <a href="#!paris">City 2</a>
+    
+    <p>Click on the links.</p>
+
+    <div ng-view></div>
+    
+    <p>Note that each "view" has its own controller which each gives the "msg" variable a value.</p>
+    
+    
+    
+    <script>
+    var app = angular.module("myApp", ["ngRoute"]);
+    app.config(function($routeProvider) {
+        $routeProvider
+        .when("/", {
+            templateUrl : "main.html",
+        })
+        .when("/london", {
+            templateUrl : "london.html",
+            controller : "londonCtrl"
+        })
+        .when("/paris", {
+            templateUrl : "paris.html",
+            controller : "parisCtrl"
+        });
+    });
+    app.controller("londonCtrl", function ($scope) {
+        $scope.msg = "I love London";
+    });
+    app.controller("parisCtrl", function ($scope) {
+        $scope.msg = "I love Paris";
+    });
+    
+    </script>
+    
+    </body>
+</html>

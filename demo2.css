@@ -1,0 +1,9 @@
+.my-div {
+    width: 300px;
+    height: 200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, black 0%, white 100%),
+    url('criancamenina.jpg');
+    background-blend-mode: saturation;
+}

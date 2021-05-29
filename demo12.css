@@ -1,0 +1,8 @@
+.center {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: red;
+    top: calc(50% - 50px / 2);/* height divided by 2*/
+    left: calc(50% - 50px / 2);/* width divided by 2*/
+}

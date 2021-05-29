@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    color: black;
+background:#d0d6d9 url("1.jpg") top center no-repeat;
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+.conteudo{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+header{
+    max-width: 580px;
+}
+header h2{
+    color: red;
+    font-size: 40px;
+}
+header h3{
+    color: black;
+    font-size: 28px;
+    margin-top: 50px;
+}
+header h2, h3{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.fundotopo{
+    display: none;
+}
+.comprar{
+    margin: 30px auto 30px;
+    max-width: 450px;
+    font-size: 0;
+}
+.comprar ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.comprar li a{
+    display: block;
+    height: 42px;
+}
+.itunes{
+    background: url("icone24h.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 185px;
+}

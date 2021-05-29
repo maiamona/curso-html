@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Angular/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <ul  ng-controller="namesCtrl">
+        <li ng-repeat="x in names">
+{{x | myFormat}}
+        </li>
+    </ul>
+    <div ng-controller="myCtrl">
+        <h3>{{myUrl}}</h3>
+    </div>
+    <div ng-controller="mona">
+        <h1>{{myHeader}}</h1>
+    </div>
+    <div ng-controller="menito">
+        <h1>{{theTime}}</h1>
+    </div>
+    <div ng-controller="mixa">
+        <h1>{{hex}}</h1>
+    </div>
+    
+</body>
+<script src="angular8.js"></script>
+</html>

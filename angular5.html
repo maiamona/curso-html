@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Angular/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="myApp">
+    <p>The rootScope's favorite color:</p>
+    <h1 style="color:{{color}}">{{color}}</h1>
+    
+    <div ng-controller="myCtrl">
+    
+    <p>The scope of the controller's favorite color:</p>
+    <h1 style="color:{{color}}">{{color}}</h1>
+    
+    </div>
+    
+    <p>The rootScope's favorite color is still:</p>
+    <h1 style="color:{{color}}">{{color}}</h1>
+    
+    <script>
+    var app = angular.module('myApp', []);
+    app.run(function($rootScope) {
+        $rootScope.color = 'blue';
+    });
+    app.controller('myCtrl', function($scope) {
+        $scope.color = "red";
+    });
+    </script>
+    
+    <p>Notice that controller's color variable does not overwrite the rootScope's color value.</p>
+</div>
+    <div ng-controller="namesCtrl">
+
+    </div>
+    </body>
+</html>

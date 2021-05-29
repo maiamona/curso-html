@@ -1,0 +1,22 @@
+<html>
+    <head>
+        
+        <title> SOBRE NOS</title>
+        <link rel="stylesheet" href="estilo.css">
+        
+    </head>
+    <body>
+        <center><h1>SISTEMA DE GESTÃO DE IMOVEIS</h1><img id="img1" src="casa1.png" alt="" width="100" height="100"></center> 
+        <div id="menu">
+            <ul class="menu" >
+           <li> <a href="index.html">PAGINA PRINCIPAL</a></li>
+            <li><a href="sobrenos.html">SOBRE NOS</a></li>
+            <li><a href="#">FUNCIONALIDADES</a></li>
+           <li> <a href="">VANTAGENS</a></li>
+            <li><a href="">CONTACTO</a></li>
+            <li><a href="">LOGIN</a></li>
+        </ul>
+        </div>
+   <footer>&#169; 2020. Progeto -pagina web Maiamona Garcia</footer>
+</body>
+</html>

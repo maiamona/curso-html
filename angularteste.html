@@ -1,0 +1,64 @@
+<html>  
+  
+    <head>  
+        <title>Angular JS Includes</title>  
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js">  
+            </script>  
+            <script src="angular.min.js">  
+                </script>  
+                <style>  
+                table,  
+                th,  
+                td {  
+                    border: 1pxsolidgrey;  
+                    border-collapse: collapse;  
+                    padding: 5px;  
+                }  
+                  
+                tabletr:nth-child(odd) {  
+                    background-color: #0094ff;  
+                }  
+                  
+                tabletr:nth-child(even) {  
+                    background-color: #00ff90;  
+                }  
+                </style>  
+    </head>  
+  
+    <body>  
+        <h2>AngularJS Ajax Demo</h2>  
+        <div ng-app="app" ng-controller="Employee">  
+            <table>  
+                <tr>  
+                    <th>Name</th>  
+                    <th>City</th>  
+                    <th>Employee Id</th>  
+                </tr>  
+                <tr ng-repeat="Emp in Employee">  
+                    <td>{{Emp.Name}}</td>  
+                    <td>{{Emp.City}}</td>  
+                    <td>{{Emp.Emp_Id}}</td>  
+                    </tr>  
+            </table>  
+            </div>  
+            <script>  
+            import { Name, city, Emp_Id } from 'EmployeeData';
+            var appconf = angular.module('app', []);  
+            appconf.controller('Employee', function ($scope, $http)  
+            {  
+                $http(  
+                {  
+                    method: "GET",  
+                    url: "EmployeeData.json"  
+                }).then(functiononSuccess(response)  
+                {  
+                    $scope.Employee = response.data;  
+                }, functiononError(response)  
+                {  
+                    alert("Error Occur!")  
+                });  
+            })  
+            </script>  
+    </body>  
+  
+</html>  

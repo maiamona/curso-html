@@ -1,0 +1,19 @@
+div {
+    font-size: 7px;
+    border: 3px dotted pink;
+    background-color: yellow;
+    color: purple;
+}
+body.mystyle > div.myotherstyle {
+    font-size: 11px;
+    background-color: green;
+}
+#elmnt1 {
+    font-size: 24px;
+    background-color: blue;
+}
+.mystyle .myotherstyle {
+    font-size: 16px;
+    background-color: black;
+    color: red;
+}

@@ -1,0 +1,99 @@
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    border-top: 50px solid rgb(246, 156, 85);
+}
+.burst-8 {
+    background: rgb(246, 156, 85);
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    transform: rotate(20deg);
+}
+.burst-8::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    background: rgb(246, 156, 85);
+    transform: rotate(135deg);
+}
+.burst {
+    background: rgb(246, 156, 85);
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    
+}
+.burst::before, .burst::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    background: rgb(246, 156, 85);
+}
+.burst::before {
+    transform: rotate(30deg);
+}
+.burst::after {
+    transform: rotate(60deg);
+}
+.cube {
+    background: #dc2e2e;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 50px;
+}
+.cube::before {
+    content: '';
+    display: inline-block;
+    background: #f15757;
+    width: 100px;
+    height: 20px;
+    transform: skewX(-40deg);
+    position: absolute;
+    top: -20px;
+    left: 8px;
+}
+.cube::after {
+    content: '';
+    display: inline-block;
+    background: #9e1515;
+    width: 16px;
+    height: 100px;
+    transform: skewY(-50deg);
+    position: absolute;
+    top: -10px;
+    left: 100%;
+}
+.piramide {
+    width: 100px;
+    height: 200px;
+    position: relative;
+    margin: 50px;
+}
+.piramide::before, .piramide::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 50px solid;
+    position: absolute;
+}
+.piramide::before {
+    border-color: transparent transparent #ff5656 transparent;
+    transform: scaleY(2) skewY(-40deg) rotate(45deg);
+}
+.piramide::after {
+    border-color: transparent transparent #d64444 transparent;
+    transform: scaleY(2) skewY(40deg) rotate(-45deg);
+}

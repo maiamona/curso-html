@@ -1,0 +1,47 @@
+/* This parent can be any width and height */
+.block {
+    text-align: center;
+    /* May want to do this if there is risk the container may be narrower than the element
+inside */
+white-space: nowrap;
+}
+/* The ghost element */
+.block::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    /* There is a gap between ghost element and .centered,
+caused by space character rendered. Could be eliminated by
+nudging .centered (nudge distance depends on font family),
+or by zeroing font-size in .parent and resetting it back
+(probably to 1rem) in .centered. */
+margin-right: -0.25em;
+}
+/* The element to be centered, can also be of any width and height */
+.centered {
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+    white-space: normal;
+}
+.content * {
+    box-sizing: border-box;
+}
+.content .position-container {
+    display: table;
+}
+.content .details {
+    display: table-cell;
+    vertical-align: middle;
+    width: 33.333333%;
+    padding: 30px;
+    font-size: 17px;
+    text-align: center;
+}
+.content .thumb {
+    width: 100%;
+}
+.content .thumb img {
+    width: 100%;
+}

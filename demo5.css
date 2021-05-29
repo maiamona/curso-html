@@ -1,0 +1,3 @@
+
+body > .mystyle { background-color: blue ; } /* specificity: 0, 0, 1, 1 */
+.otherstyle > div { background-color: red; } /* specificity: 0, 0, 1, 1 */

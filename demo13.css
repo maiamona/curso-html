@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+.vcenter--container {
+    position: absolute;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+}
+.vcenter--helper {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.vcenter--content {
+    display: inline-block;
+    text-align: left;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #000;
+}
